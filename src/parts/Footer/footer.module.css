@@ -1,0 +1,197 @@
+.content {
+    height: 180px;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease-in;
+}
+
+.mainwrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.92%;
+    padding-left: 7.0833%;
+    padding-right: 7.0833%;
+}
+
+.barakLogo {
+    width: 5.42%;
+    height: 47.2833%;
+}
+
+.iitgLogo {
+    width: 6.458%;
+    height: 47.22%;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 18.55%;
+    align-items: center;
+}
+
+.Barak2 {
+    width: 58.7%;
+    height: 18.97px;
+}
+
+.wrapper {
+    display: flex;
+    color: #f5f4f4;
+    font-family: Montserrat;
+    justify-content: space-between;
+    width: 54.36%;
+    height: 94px;
+    align-items: flex-start;
+}
+
+.wrapper h1 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.8125em;
+    padding-bottom: 6%;
+    padding-top: 15.957%;
+}
+
+.wrapper h2 {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 11.5px;
+    padding-bottom: 2.127%;
+}
+
+.socialmedia {
+    display: flex;
+    width: 33.91%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    display: flex;
+    color: #f5f4f4;
+
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.bottom ul {
+    padding-left: 2.6388888889%;
+}
+.bottom li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.bottom li a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #f5f4f4;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 0;
+    padding-left: 0px;
+
+    font-family: Montserrat;
+}
+
+.bottom li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 950px) {
+    .content {
+        height: 598px;
+        font-size: 13px;
+    }
+
+    .mainwrapper {
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
+        align-items: center;
+        font-size: 13px;
+    }
+    .wrapper {
+        flex-direction: column;
+        height: 350px;
+        align-items: center;
+        margin: 0 0;
+        font-size: 12px;
+        align-items: center;
+        padding-bottom: 16px;
+    }
+    .wrapper h1 {
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 8px;
+    }
+    .wrapper h2 {
+        text-align: center;
+    }
+    .Barak2 {
+        padding-top: 5px;
+        width: 34.7%;
+        height: 32.97px;
+        padding-bottom: 11px;
+    }
+    .barakLogo {
+        display: none;
+    }
+    .icons {
+        width: 301px;
+        margin: 10px 0;
+        flex-direction: column;
+    }
+    .bottom {
+        padding: 9px;
+    }
+
+    .iitgLogo {
+        width: 9%;
+        height: 64px;
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .content {
+        height: 728px;
+        font-size: 13px;
+    }
+    .iitgLogo {
+        width: 15%;
+        height: 10%;
+        padding-top: 8px;
+    }
+
+    .bottom ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 9px;
+    }
+    .dash {
+        display: none;
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 340px) {
+    .iitgLogo {
+        width: 18%;
+        height: 8vh;
+        padding-top: 8px;
+    }
+}

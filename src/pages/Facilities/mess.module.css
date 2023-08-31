@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap");
+
+.header {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 4.2361111111vw;
+    line-height: 5.1388888889vw;
+    letter-spacing: -0.015em;
+    padding-top: 16.25%;
+    padding-left: 57.9166666667%;
+}
+.content {
+    width: 100%;
+    height: 53.889vw;
+
+    background-size: 100% 100%;
+}
+
+.content p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1111111111vw;
+    line-height: 1.3888888889vw;
+    letter-spacing: 0.005em;
+    padding-left: 57.9166666667%;
+    padding-top: 1.5277777778%;
+    padding-right: 10.2083333333%;
+}
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.bookButtom {
+    font-family: "Montserrat", sans-serif;
+
+    height: 4.0277777778vw;
+    width: 48.2456140351%;
+    padding: 0%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.bookButtom a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1111111111vw;
+    /* line-height: 1.3888888889vw; */
+    letter-spacing: 0.005em;
+    text-decoration: none;
+    /* padding: 1.3888888889% 7.0833333333%; */
+    color: white;
+}
+
+.buton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 31.6666666667%;
+    margin-left: 57.9166666667%;
+    margin-top: 1.7361111111%;
+}
+@media screen and (max-width: 800px) {
+    .content p {
+        font-size: 1.6666666667vw;
+        line-height: 2.0833333334vw;
+        letter-spacing: 0.0075em;
+    }
+    .header {
+        padding-top: 10%;
+    }
+    .bookButtom a {
+        font-size: 1.6666666667vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .content p {
+        font-size: 2.25vw;
+        line-height: 3vw;
+        letter-spacing: 0.01em;
+        padding-left: 25%;
+        padding-right: 5%;
+    }
+    .header {
+        padding-top: 10%;
+        padding-left: 25%;
+    }
+    .bookButtom a {
+        font-size: 2.25vw;
+    }
+    .buton {
+        margin-left: 25%;
+        width: 60%;
+    }
+    .bookButtom {
+        height: 6vw;
+    }
+}

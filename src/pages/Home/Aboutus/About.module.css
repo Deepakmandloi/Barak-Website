@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+.aboutwholecontainer {
+    width: 80%;
+    height: 600px;
+    margin: 2vh auto;
+    color: black;
+    box-shadow: 0px 0px 27px 10px rgb(219, 216, 216);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2vh 1vh;
+    
+    min-height: 500px;
+    margin-bottom: 20px;
+}
+
+.aboutfirstcontainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.8vw 1vw;
+    text-align: left;
+    /* min-width: 450px;  */
+}
+
+.aboutheading {
+    font-size: 3vw;
+    line-height: 117.02px;
+    color: black;
+    font-weight: 600;
+    font-family: Montserrat;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.aboutsecondcontainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    padding: 16vh 0;
+}
+.slick-slider {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* .slick-slide{
+    /* color:red; 
+    background-color: red; */
+/* }  */
+.aboutimgcontainerone {
+    width: 300px;
+    height: 300px;
+    /* padding:0 20px;  */
+    /* margin:0 40px;  */
+    background-image: url("./BarakPic1.jpg");
+    background-size: 100% 100%;
+}
+.aboutimgcontainertwo {
+    width: 300px;
+    height: 300px;
+    /* margin:0 40px;  */
+
+    background-image: url("./BarakPic2.jpg");
+    background-size: 100% 100%;
+}
+.aboutimgcontainerthree {
+    width: 300px;
+    height: 300px;
+    /* margin:0 40px;  */
+    background-image: url("./BarakPic3.jpg");
+    background-size: 100% 100%;
+}
+.aboutimgcontainerfour {
+    width: 300px;
+    /* margin:0 40px;  */
+    height: 300px;
+    background-image: url("./BarakPic2.jpg");
+    background-size: 100% 100%;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+button.slick-arrow {
+    background-color: black;
+    border-radius: 50%;
+    /* bottom:-25px;  */
+}
+button.slick-arrow:hover {
+    background-color: green;
+}
+
+@media only screen and (max-width: 1364px) {
+    .aboutfirstcontainer {
+        width: 50%;
+    }
+    .aboutsecondcontainer {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1246px) {
+    .aboutimgcontainer {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1244px) {
+    .aboutfirstcontainer {
+        width: 100%;
+        height: 40%;
+    }
+    .aboutsecondcontainer {
+        width: 100%;
+        height: 60%;
+    }
+    .container {
+        padding: 20px 0;
+    }
+
+    .slick-slide img {
+        width: 95%;
+        height: 300px;
+    }
+    .aboutheading {
+        line-height: 80.02px;
+        font-size: 2.5em;
+    }
+    .aboutimgcontainerone {
+        border: 10px solid white;
+    }
+    .aboutimgcontainertwo {
+        border: 10px solid white;
+    }
+    .aboutimgcontainerthree {
+        border: 10px solid white;
+    }
+    .aboutimgcontainerfour {
+        border: 10px solid white;
+    }
+}
+
+/* 602 */
+@media only screen and (max-width: 602px) {
+    .aboutwholecontainer{
+        margin-top:-1.2vh;
+        position: relative;
+        background: white;
+        box-shadow: 0px 4px 27px 3px rgb(219, 216, 216);
+    }
+    .aboutfirstcontainer > p {
+        width: 100%;
+        font-size: 3.2vw;
+        overflow-wrap: break-word;
+    }
+    .aboutheading {
+        line-height: 65.02px;
+    }
+}
+@media only screen and (max-width: 402px) {
+    .aboutheading {
+        font-size: 1.2em;
+        line-height: 50.02px;
+    }
+    .aboutfirstcontainer {
+        /* padding:0;  */
+        height: fit-content;
+    }
+    .aboutwholecontainer{
+        margin-top:-1.2vh;
+        position: relative;
+        background: white;
+        box-shadow: 0px 4px 0px 0px rgb(219, 216, 216);
+    }
+}

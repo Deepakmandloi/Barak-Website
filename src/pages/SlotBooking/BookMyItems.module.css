@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fullcontainer {
+    height: 65%;
+    max-width: min(900px, 65%);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 16px 3px #00000014;
+    min-height: 500px;
+    margin: 140px auto 75px;
+}
+
+.leftcontainer {
+    width: 47%;
+    background-image: url("./TT.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rightcontainer {
+    width: 57%;
+    /* background: #f5f4f4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textcontainer {
+    width: 72%;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.7em;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form {
+    font-family: "Montserrat", sans-serif;
+}
+
+.inputbox {
+    width: 100%;
+    font-family: inherit;
+}
+
+.textcontainer input {
+    /* background-color: #f5f4f4; */
+    border: 1px solid #929292;
+    padding: 12px 10px;
+    height: 3.5em;
+    width: 90%;
+    margin-bottom: 17px;
+    border-radius: 2px;
+    font-size: 13.2px;
+}
+.timeinputbox {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 2px;
+}
+
+.datecontainer,
+.timecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+.calendar,
+.time {
+    background-image: url("./calendar.png");
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 8%;
+    top: 23%;
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
+}
+.time {
+    background-image: url("./clock.png");
+}
+
+.textcontainer button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    width: 90%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: inherit;
+}
+.confirmedup {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.015em;
+    text-align: center;
+}
+.confirmeddown {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #837d7d;
+    width: 70%;
+}
+
+@media only screen and (max-width: 850px) {
+    .fullcontainer {
+        flex-direction: column;
+    }
+    .leftcontainer,
+    .rightcontainer {
+        width: 100%;
+    }
+    .leftcontainer {
+        height: 0;
+        filter: blur(4px);
+        display: none;
+    }
+    .heading {
+        color: white;
+    }
+    .rightcontainer {
+        height: 100%;
+        min-height: 500px;
+
+        background-image: url("./TT.png");
+        background-size: cover;
+        background-position: center;
+        -webkit-backdrop-filter: blur(
+            5px
+        ); /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+        backdrop-filter: blur(5px);
+    }
+    .confirmedup {
+        outline: white;
+        background-color: white;
+        backdrop-filter: blur(10px);
+    }
+    .confirmeddown {
+        color: white;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fullcontainer {
+        max-width: 65%;
+    }
+    .textcontainer {
+        width: 80%;
+    }
+    .textcontainer button {
+        font-size: 14.75px;
+    }
+    .textcontainer input {
+        font-size: 12.5px;
+    }
+    .heading {
+        font-size: 1.7em;
+    }
+    .confirmedup {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .fullcontainer {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .textcontainer button {
+        font-size: 14px;
+    }
+    .textcontainer input {
+        font-size: 12.25px;
+    }
+    .heading {
+        font-size: 1.6em;
+    }
+    .confirmedup {
+        font-size: 26px;
+    }
+}

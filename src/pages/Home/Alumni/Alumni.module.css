@@ -1,0 +1,69 @@
+/* @import-normalize; */
+/* @import 'font.css'; */
+.parentdiv{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:95%;
+    flex-wrap: wrap;
+    margin:2em  auto ;
+}
+.mainheading{
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: -0.015em;
+
+color: #1A1A1A;
+}
+.card{
+    width: 254px;
+    height: 285px;  
+    margin:3em; 
+}
+.alumimage{
+    width: 100%;
+    height: 70%;  
+    object-fit: cover;
+    object-position: center;
+}
+.alumname{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: #1A1A1A;
+    text-align: center;
+    margin-top: .5em;
+}
+.alumpost,.alumbatch{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #1A1A1A;
+    text-align: center;
+    margin-top: .3em;
+
+}
+
+
+/* 735 */
+@media only screen and (max-width:735px){
+   .card{
+       width:320px; 
+       margin:2.2em; 
+   }
+   .alumimage{
+       height:80%;
+   }
+}

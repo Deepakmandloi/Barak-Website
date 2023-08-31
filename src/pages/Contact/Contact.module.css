@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fullcontainer {
+    height: 65%;
+    max-width: min(900px, 65%);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 16px 3px #00000014;
+    min-height: 500px;
+    margin: 140px auto 75px;
+}
+
+.leftcontainer {
+    width: 47%;
+    background-image: url("../Home/Aboutus/BarakPic3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rightcontainer {
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textcontainer {
+    width: 72%;
+    text-align: center;
+}
+
+.heading {
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: 1.2em;
+    font-weight: 600;
+    font-family: 'Bebas Neue', cursive;
+}
+.contactinfo
+{
+    text-align: left;
+}
+.contactinfo p {
+    margin-top: 20px;
+}
+.complaintButton
+{
+    width:100%;
+    height:40px;
+    margin-top: 40px;
+    border: none;
+    background-color: #1A1A1A;
+    color: #F5F4F4;
+}
+.complaintButton:hover
+{
+    cursor:pointer;
+}
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0.5em 0;
+}
+.complaint_input
+    {
+     width:100%;
+     height: 150px;   
+     resize: none;
+     padding:4px;
+    }
+
+
+@media only screen and (max-width: 850px) {
+    .bottom {
+        color: #fff;
+    }
+    .fullcontainer {
+        flex-direction: column;
+    }
+    .leftcontainer,
+    .rightcontainer {
+        width: 100%;
+    }
+    .leftcontainer {
+        height: 0;
+        filter: blur(4px);
+        display: none;
+    }
+    .heading {
+        color: white;
+    }
+    
+    .rightcontainer {
+        position: relative;
+        height: 100%;
+        min-height: 500px;
+        color: #fff;
+        overflow: hidden;
+    }
+    .blurLayer{
+        position: absolute;
+        height: 100%;
+        min-height: 500px;
+        width:100%;
+        z-index: 1;
+        background-image: url("../Home/Aboutus/BarakPic3.jpg");
+        background-size: cover;
+        background-position: center; 
+        filter: blur(3px);  
+
+        
+    }
+    .textcontainer
+    {
+        position: absolute;
+        z-index: 2;
+        text-shadow: 0 0 6px #000;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .fullcontainer {
+        max-width: 65%;
+    }
+    .textcontainer {
+        width: 80%;
+    }
+    .textcontainer button {
+        font-size: 14.75px;
+    }
+    .inputbox {
+        font-size: 12.5px;
+    }
+    .heading {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .fullcontainer {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .textcontainer button {
+        font-size: 14px;
+    }
+    .inputbox {
+        font-size: 12.25px;
+    }
+    .heading {
+        font-size: 1.6em;
+    }
+    .confirmedup {
+        font-size: 26px;
+    }
+}

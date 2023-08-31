@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap");
+
+.header {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 4.2361111111vw;
+    line-height: 5.1388888889vw;
+    letter-spacing: -0.015em;
+    padding-top: 17.0138888889%;
+    padding-left: 14.5833333333%;
+}
+.content {
+    width: 100%;
+    height: 53.889vw;
+    background-size: 100% 100%;
+    background-color: #c4c4c445;
+}
+
+.content p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1111111111vw;
+    line-height: 1.3888888889vw;
+    letter-spacing: 0.005em;
+    padding-left: 14.5833333333%;
+    padding-top: 2.4305555556%;
+    padding-right: 53.5416666667%;
+}
+@media screen and (max-width: 800px) {
+    .content p {
+        font-size: 1.6666666667vw;
+        line-height: 2.0833333334vw;
+        letter-spacing: 0.0075em;
+    }
+    .header {
+        padding-top: 10%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .content p {
+        font-size: 2.5vw;
+        line-height: 3vw;
+        letter-spacing: 0.01em;
+        padding-right: 25%;
+        padding-left: 5%;
+    }
+    .header {
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+    .bookButtom a {
+        font-size: 2.5vw;
+    }
+}

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+.main {
+    max-width: 100%;
+    width: 100vw;
+    object-fit: cover;
+}
+.child_2 {
+    position: relative;
+}
